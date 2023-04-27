@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap'); /* Bruno Ace */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap'); /* Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap'); /* Comforta */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap'); /* Quicksand */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #f54768;
+    --secondary-color: #6158dc;
+    --tertiary-color: #eaebed;
+    --supporting-color: #41436a;
+    --bg-color: #121212;
+    --text-color: #f2f2f2;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    background-color: var(--primary-color);
+}
+nav ul {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-right: 5rem;
+    width: 100%;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 2rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+nav ul li a:hover {
+    color: white;
+}
+nav ul li a:active {
+    border-bottom: 3px solid var(--tertiary-color); 
+}
+nav .logo {
+    width: 10vh;
+    margin: 5px 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--tertiary-color);
+}
+nav span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: var(--primary-color);
+    min-height: 85svh;
+    color: var(--text-color);
+}
+.home .left {
+    margin-left: 5rem;
+    width: 60%;
+}
+.home .right {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+.home .right img {
+    width: 60%;
+    margin-right: 5rem;
+}
+
+.heading {
+    font-size: xx-large;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bolder;
+}
+.text {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.btn {
+    padding: 0.3rem 1.5rem;
+    width: 9rem;
+    border-radius: 50px;
+    margin: 1.5rem 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.primary {
+    border: 2.5px solid var(--primary-color);
+    outline: 2.5px solid var(--tertiary-color);
+    background-color: var(--primary-color);
+    color: white;
+}
+.primary:hover {
+    background-color: var(--tertiary-color);
+    color: black;
+}
+.primary:active {
+    border: 2.5px solid var(--tertiary-color);
+    outline: 2.5px solid var(--primary-color);
+}
+
+.secondary {
+    border: 2.5px solid var(--secondary-color);
+    outline: 2.5px solid var(--tertiary-color);
+    background-color: var(--secondary-color);
+    color: white;
+
+}
+.secondary:hover {
+    background-color: var(--tertiary-color);
+    color: black;
+}
+.secondary:active {
+    border: 2.5px solid var(--tertiary-color);
+    outline: 2.5px solid var(--secondary-color);
+}
+
+.items {
+    background-color: var(--bg-color);
+    margin: 2.5rem;
+}
+.items section{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    margin: 2.5rem;   
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: 35vh;
+    border-radius: 5px;
+}
+.card-img img {
+    width: 100%;
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: larger;
+    margin: 1rem 0.5rem 0.2rem 0.5rem;
+}
+.card-desc {
+    color: var(--tertiary-color);
+    text-align: left;
+    margin: 0.2rem 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: smaller;
+}
+.card-prize {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    font-family: 'Poppins';
+    margin: 2rem 0 2rem 2rem;
+    font-size: small;
+    font-weight: 800;
+    color: var(--tertiary-color);
+}
